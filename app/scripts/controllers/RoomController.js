@@ -15,6 +15,12 @@ angular.module('AngularScaffold.Controllers')
       $scope.roomSelected = $state.params.content.selectedRoomsv1;
     }
 
+    $scope.init = function() {
+      $scope.getRooms();
+      $scope.llenarEmpleado();
+
+    }
+
     $scope.chooseEmployee = function(params,index){
       $scope.empleados.splice(index,1);
       $scope.working_employee.push(params);

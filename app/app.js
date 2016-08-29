@@ -35,5 +35,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             url: '/dist',
             params: {content:undefined},
             templateUrl: '/viewsAdmin/distributeRooms.html'
+        })
+        .state('temp', {
+            url: '/temp',
+            params: {content:undefined},
+            templateUrl: '/viewsAdmin/temp.html'
         });
 }])
