@@ -26,6 +26,8 @@ angular.module('AngularScaffold.Controllers')
     $scope.room;
     $scope.dragged_Room ={}
     $scope.room_dragged_from = {}
+    $scope.RoomSelected = false;
+    $scope.currentRoom;
     
     //--lo que hizo elena ---
 
@@ -634,12 +636,10 @@ angular.module('AngularScaffold.Controllers')
     }
 
     $scope.changeRoomEmp = function(id){
-      console.log($scope.currentEmpRooms)
       for(var i=0;i<$scope.currentEmpRooms.length;i++){
         if (id==$scope.currentEmpRooms[i].room_id) {
-             $state.go("roomemp",{content: {
-              habitaciones:   $scope.currentEmpRooms[i]
-            }})
+             $scope.currentRoom = $scope.currentEmpRooms[i];
+             $scope.RoomSelected = true;
         };
 
       }
