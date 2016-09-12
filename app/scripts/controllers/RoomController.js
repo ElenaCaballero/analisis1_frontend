@@ -66,6 +66,7 @@ angular.module('AngularScaffold.Controllers')
     };
     $scope.stopCallback_distribution = function(event, ui, employee) {    
         var cont_succeeded_operations = 0;
+        angular.element(event.target).removeClass("room-hover"); 
         for(var i =0; i < $scope.employeeWithRooms.length; i++){//lo eliminaremos del que lo tenia antes
           if($scope.employeeWithRooms[i].empleado.username == $scope.room_dragged_from.empleado.username){
             var index = -1;
@@ -340,7 +341,7 @@ angular.module('AngularScaffold.Controllers')
       console.log($stateParams )
       $scope.distribute();
     }
-    
+
     $scope.distribute = function(){
       
       var selectedRooms = $scope.selectedRooms

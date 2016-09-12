@@ -19,6 +19,7 @@ angular.module('AngularScaffold.Controllers')
     $scope.mostraUsuario = function(){
           console.log($scope.usuarioSeleccionado);
     }
+    
     $scope.crear_usuario = function(){
       console.log("entro")
       var file = document.querySelector('input[type=file]').files[0];
