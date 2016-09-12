@@ -58,16 +58,16 @@
         <label for="name">Usuario:</label>
         <input type="text" id="name" name="user_username" ng-model ="usuario.username">
 
-        <div class="role-user contain">
+        <div class="role-user">
           <label>Rol:</label> <br>
-          <input type="radio" id="adm" value="0" ng-model ="usuario.role" ><label for="adm" class="light"> <span class="radio">Administrador</span></label><br>
-          <input type="radio" id="emp"  value="1" ng-model ="usuario.role" ><label for="emp" class="light"> <span class="radio">Empleado</span></label>
+          <input type="radio" id="adm" value="0" ng-model ="usuario.role" ><label for="adm" class="light"> Administrador</label><br>
+          <input type="radio" id="emp"  value="1" ng-model ="usuario.role" ><label for="emp" class="light"> Empleado</label>
         </div>
 
-        <div class="type-user contain">
+        <div class="type-user">
           <label>Tipo:</label> <br>
-          <input type="radio" id="perm"  value="0" ng-model ="usuario.employee_type" ><label for="perm" class="light"><span class="radio">Permanente</span> </label><br>
-          <input type="radio" id="temp" value="1" ng-model ="usuario.employee_type" ng-disabled="usuario.role == '0' "><label for="temp" class="light" ><span class="radio"> Temporal</span></label>
+          <input type="radio" id="perm"  value="0" ng-model ="usuario.employee_type" ><label for="perm" class="light">Permanente </label><br>
+          <input type="radio" id="temp" value="1" ng-model ="usuario.employee_type" ng-disabled="usuario.role == '0' "><label for="temp" class="light" > Temporal</label>
         </div>
         
       </fieldset>
@@ -126,20 +126,20 @@
         <label for="name">Usuario:</label>
         <input type="text" id="name" name="user_username" ng-model ="usuarioSeleccionado.username">
 
-        <div class="role-user contain">
+        <div class="role-user">
           <label>Rol:</label> <br>
-          <input type="radio" id="adm" value="0" ng-model="usuarioSeleccionado.role"><label for="adm" class="light"><span class="radio"> Administrador</span></label><br>
-          <input type="radio" id="emp" value="1" ng-model="usuarioSeleccionado.role"><label for="emp" class="light"><span class="radio"> Empleado</span></label>
+          <input type="radio" id="adm" value="0" ng-model="usuarioSeleccionado.role"><label for="adm" class="light"> Administrador</label><br>
+          <input type="radio" id="emp" value="1" ng-model="usuarioSeleccionado.role"><label for="emp" class="light"> Empleado</label>
         </div>
-        <div class="type-user contain">
+        <div class="type-user">
           <label>Tipo:</label> <br>
-          <input type="radio" id="perm" value="0" ng-model="usuarioSeleccionado.employee_type"><label for="perm" class="light"> <span class="radio">Permanente</span></label><br>
-          <input type="radio" id="temp" value="1" ng-model="usuarioSeleccionado.employee_type"><label for="temp" class="light"> <span class="radio">Temporal</span></label>
+          <input type="radio" id="perm" value="0" ng-model="usuarioSeleccionado.employee_type"><label for="perm" class="light"> Permanente</label><br>
+          <input type="radio" id="temp" value="1" ng-model="usuarioSeleccionado.employee_type"><label for="temp" class="light"> Temporal</label>
         </div>
-        <div class="state-user contain">
+        <div class="state-user">
           <label>Estado:</label> <br>
-          <input type="radio" id="inact" value="0" ng-model="usuarioSeleccionado.status" ><label for="inact" class="light"><span class="radio"> Inactivo</span></label><br>
-          <input type="radio" id="act" value="1" ng-model="usuarioSeleccionado.status" ><label for="act" class="light" ><span class="radio"> Activo</span></label>
+          <input type="radio" id="inact" value="0" ng-model="usuarioSeleccionado.status" ><label for="inact" class="light"> Inactivo</label><br>
+          <input type="radio" id="act" value="1" ng-model="usuarioSeleccionado.status" ><label for="act" class="light" > Activo</label>
         </div>
         </fieldset>
       <p></p>
