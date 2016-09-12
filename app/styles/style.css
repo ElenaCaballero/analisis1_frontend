@@ -27,7 +27,7 @@ h1{
 }
 .role-user{
 	float: left;
-	margin-left: 10px!important;
+	margin-left: 40px!important;
 }
 .state-user{
 	float: left;
@@ -280,7 +280,7 @@ textarea.focus {
 label {
   display: block;
   cursor: pointer;
-  line-height: 2.5;
+  line-height: 1;
 }
 
 [type="radio"] + span {

@@ -93,7 +93,7 @@
 
     <div class="row">
       <div class="repart col-md-3" ng-repeat = "e in employeeWithRooms track by $index"
-           ng-model="employeeWithRooms.habitacion" data-drop="true" data-jqyoui-options jqyoui-droppable="{multiple:true,onOver:'room_hover(e)',
+           ng-model="employeeWithRooms.habitacion" data-drop="true" data-jqyoui-options jqyoui-droppable="{multiple:true, onOver:'room_hover(e)',
            onOut:'room_hover_out(e)',onDrop:'stopCallback_distribution(e)'}">
         <h4 class="repart-name" >
           {{e.empleado.username}}
